@@ -1,0 +1,222 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #fff8ee;
+  --cream-deep: #fdeed9;
+  --ink: #3d3330;
+  --ink-soft: #6f5f59;
+  --teal: #0e9b8e;
+  --teal-deep: #0b7d73;
+  --teal-wash: #dcf5f1;
+  --coral: #ff6f61;
+  --coral-deep: #e45748;
+  --coral-wash: #ffe7e1;
+  --honey: #ffb63d;
+  --card: #ffffff;
+  --line: #f0dfc8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Nunito", "Quicksand", ui-rounded, "SF Pro Rounded",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-plump {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.paw-shell {
+  background:
+    radial-gradient(420px 200px at 8% -40px, #ffe9c9 0%, transparent 70%),
+    radial-gradient(520px 240px at 95% -60px, #d8f4ef 0%, transparent 70%),
+    var(--cream);
+}
+
+.bubble-card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 2rem;
+  box-shadow: 0 10px 0 rgba(61, 51, 48, 0.06);
+}
+
+.bubble-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.95rem;
+  font-size: 0.82rem;
+  font-weight: 800;
+  border: 2px solid transparent;
+}
+
+.chip-teal {
+  background: var(--teal-wash);
+  color: var(--teal-deep);
+  border-color: #b9e8e1;
+}
+
+.chip-coral {
+  background: var(--coral-wash);
+  color: var(--coral-deep);
+  border-color: #f6c4bb;
+}
+
+.chip-honey {
+  background: #fff1d3;
+  color: #92600a;
+  border-color: #f3d68f;
+}
+
+.btn-plump {
+  border-radius: 999px;
+  font-weight: 800;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-plump:hover {
+  transform: translateY(-2px);
+}
+
+.btn-teal {
+  background: var(--teal);
+  color: #fff;
+  box-shadow: 0 6px 0 var(--teal-deep);
+}
+
+.btn-coral {
+  background: var(--coral);
+  color: #fff;
+  box-shadow: 0 6px 0 var(--coral-deep);
+}
+
+.vet-card {
+  background: linear-gradient(135deg, #e2faf6 0%, #fff6e8 100%);
+  border: 2px dashed var(--teal);
+  border-radius: 1.75rem;
+}
+
+.article-body p {
+  margin: 1rem 0;
+  line-height: 1.85;
+  color: #4c423d;
+}
+
+.article-body h2 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 2.4rem 0 0.8rem;
+  color: var(--ink);
+}
+
+.article-body h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+  margin: 1.6rem 0 0.5rem;
+  color: var(--teal-deep);
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0.8rem 0 1.2rem 1.3rem;
+  line-height: 1.8;
+  color: #4c423d;
+}
+
+.article-body ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.article-body ul li {
+  position: relative;
+  padding-left: 1.9rem;
+  margin-bottom: 0.55rem;
+}
+
+.article-body ul li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body ol li {
+  margin-bottom: 0.55rem;
+  padding-left: 0.3rem;
+}
+
+.article-body table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.4rem 0;
+  font-size: 0.92rem;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+
+.article-body th {
+  background: var(--teal);
+  color: #fff;
+  text-align: left;
+  padding: 0.8rem 1rem;
+  font-weight: 800;
+}
+
+.article-body td {
+  padding: 0.75rem 1rem;
+  border-top: 1.5px solid #f4e7d2;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.article-body tr:nth-child(even) td {
+  background: #fffaf0;
+}
+
+.article-body a {
+  color: var(--teal-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #9adfd6;
+  text-underline-offset: 3px;
+}
+
+.faq-bubble {
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 1.5rem;
+  padding: 1.2rem 1.35rem;
+}
+
+.nav-pill {
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  border: 2px solid transparent;
+}
+
+.nav-pill:hover {
+  background: #fff;
+  border-color: var(--line);
+  color: var(--ink);
+}
