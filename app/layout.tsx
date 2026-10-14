@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       "Friendly, vet-informed guides for dog and cat adoption, training, nutrition, health, safety, and everyday costs.",
   },
   robots: { index: true, follow: true },
+  other: {
+    "google-adsense-account": "ca-pub-4906207495792820",
+  },
 };
 
 const NAV = [
@@ -128,7 +131,11 @@ export default function RootLayout({
             </p>
             <p className="mt-2 text-xs text-[#6f5f59]">
               © 2026 LoanPay Pets · pets.loanpaylogic.com · Updated: October
-              2026
+              2026 · Part of{" "}
+              <a href="https://loanpaylogic.com" className="underline">LoanPay Logic</a> ·{" "}
+              <a href="https://insurance.loanpaylogic.com" className="underline">Pet Insurance</a> ·{" "}
+              <a href="https://home.loanpaylogic.com" className="underline">Home</a> ·{" "}
+              <a href="https://food.loanpaylogic.com" className="underline">Kitchen</a>
             </p>
           </div>
         </footer>
