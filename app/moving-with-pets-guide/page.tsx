@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Moving With Pets Guide: Stress-Free Relocation",
@@ -292,6 +292,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal interstate and international pet-travel rules" }}
+          authority={{ href: "https://www.aaha.org/resources/pet-owner/", label: "AAHA pet-owner resources", desc: "accredited-hospital relocation guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: AVMA moving and travel resources; ASPCA relocation

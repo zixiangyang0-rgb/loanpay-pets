@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Cat Nutrition Guide: Food, Portions & Kitten Diets",
@@ -290,6 +290,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.fda.gov/animal-veterinary", label: "FDA Center for Veterinary Medicine", desc: "federal pet-food safety and labeling information" }}
+          authority={{ href: "https://www.avma.org/resources-tools/pet-owners", label: "AVMA pet-owner resources", desc: "veterinarian-reviewed feline nutrition guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: AAFCO official publication; American Association of Feline

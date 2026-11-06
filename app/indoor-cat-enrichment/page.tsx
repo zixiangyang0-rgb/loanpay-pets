@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Indoor Cat Enrichment: Play, Scratching & Fun",
@@ -297,6 +297,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal animal-welfare and pet-care rules" }}
+          authority={{ href: "https://www.avma.org/resources-tools/pet-owners", label: "AVMA pet-owner resources", desc: "veterinarian-reviewed feline welfare guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: American Association of Feline Practitioners

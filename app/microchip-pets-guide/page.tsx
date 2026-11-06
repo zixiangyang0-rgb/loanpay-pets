@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Microchip Pets Guide: Cost, Registration & GPS",
@@ -289,6 +289,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal pet-travel and identification rules" }}
+          authority={{ href: "https://www.aaha.org/resources/pet-owner/", label: "AAHA pet-owner resources", desc: "accredited-hospital microchipping guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: AAHA microchipping resources; AVMA pet identification

@@ -30,6 +30,35 @@ export function VetNote({ children }: { children?: React.ReactNode }) {
   );
 }
 
+export type OfficialLink = { href: string; label: string; desc: string };
+
+export function OfficialBox({
+  gov,
+  authority,
+}: {
+  gov: OfficialLink;
+  authority: OfficialLink;
+}) {
+  return (
+    <aside
+      aria-label="Official resources"
+      className="mt-8 rounded-2xl border-2 border-[#b9e8e1] bg-[#f2fbf9] p-5"
+    >
+      <p className="font-plump text-sm text-[#0b7d73]">
+        🏛️ Official resources
+      </p>
+      <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+        <li>
+          <a href={gov.href}>{gov.label}</a> — {gov.desc}
+        </li>
+        <li>
+          <a href={authority.href}>{authority.label}</a> — {authority.desc}
+        </li>
+      </ul>
+    </aside>
+  );
+}
+
 export function FaqSection({ faqs }: { faqs: Faq[] }) {
   return (
     <section aria-label="Frequently asked questions" className="mt-10">

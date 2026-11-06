@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Best Dog Breeds for Apartments: 15 Calm Picks",
@@ -322,6 +322,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal animal-welfare and pet-travel rules" }}
+          authority={{ href: "https://www.avma.org/resources-tools/pet-owners", label: "AVMA pet-owner resources", desc: "veterinarian-reviewed breed and ownership guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: American Kennel Club breed resources; ASPCA adoption and

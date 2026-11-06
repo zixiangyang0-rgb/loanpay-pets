@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { faqJsonLd, VetNote, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Cat Adoption Checklist: New Owner Guide 2026",
@@ -313,6 +313,11 @@ export default function Page() {
         </VetNote>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal pet-travel and animal-welfare rules" }}
+          authority={{ href: "https://www.avma.org/resources-tools/pet-owners", label: "AVMA pet-owner resources", desc: "veterinarian-reviewed adoption guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: American Association of Feline Practitioners guidelines;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Estimator from "./estimator";
-import { faqJsonLd, FaqSection } from "../lib";
+import { faqJsonLd, FaqSection, OfficialBox } from "../lib";
 
 export const metadata: Metadata = {
   title: "Pet Budget Calculator: Monthly & Yearly Costs",
@@ -309,6 +309,11 @@ export default function Page() {
         </p>
 
         <FaqSection faqs={FAQS} />
+
+        <OfficialBox
+          gov={{ href: "https://www.aphis.usda.gov", label: "USDA APHIS", desc: "federal pet-travel and animal-welfare rules" }}
+          authority={{ href: "https://www.aaha.org/resources/pet-owner/", label: "AAHA pet-owner resources", desc: "accredited-hospital ownership guidance" }}
+        />
 
         <p className="mt-8 text-sm text-[#6f5f59]">
           Sources: American Veterinary Medical Association ownership data;
