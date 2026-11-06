@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { faqJsonLd, VetNote, FaqSection } from "../lib";
+import { VetNote, FaqSection } from "../lib";
+import { Byline, GuideSchema } from "../components/schema";
 
 export const metadata: Metadata = {
   title: "Dog Adoption Checklist: 25 Steps for New Owners",
@@ -65,6 +66,7 @@ export default function Page() {
       <p className="mt-2 text-sm font-bold text-[#6f5f59]">
         Updated: October 2026 · Sources: AAHA, ASPCA · 12-minute read
       </p>
+      <Byline />
       <div className="article-body">
         <p>
           This <strong>dog adoption checklist</strong> walks you through all
@@ -338,9 +340,11 @@ export default function Page() {
           <Link href="/vet-costs-guide">vet costs guide</Link>.
         </p>
       </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(FAQS)) }}
+      <GuideSchema
+        title="Dog Adoption Checklist: 25 Steps for New Owners"
+        description="Dog adoption checklist with 25 steps: costs, supplies, vet visits & training. Start your new dog's first week right — read the full guide!"
+        slug="dog-adoption-checklist"
+        faqs={FAQS.map((f) => ({ question: f.q, answer: f.a }))}
       />
     </article>
   );

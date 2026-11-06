@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+import { OrgJsonLd } from "./components/schema";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -55,6 +56,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           strategy="lazyOnload"
         />
+        <OrgJsonLd />
         <header className="mx-auto w-full max-w-6xl px-4 pt-5">
           <div className="bubble-card flex flex-wrap items-center justify-between gap-3 px-5 py-4">
             <Link href="/" className="flex items-center gap-3">
