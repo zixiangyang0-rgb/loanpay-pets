@@ -318,12 +318,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aaha.org/resources/pet-owner/">
             AAHA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/pet-insurance-guide">pet insurance guide</Link> ·{" "}
-          <Link href="/pet-budget-calculator">pet budget calculator</Link> ·{" "}
-          <Link href="/spay-neuter-guide">spay-neuter guide</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/pet-insurance-guide">Pet Insurance Guide</Link> — costs, coverage types, and when to enroll.
+            </li>
+            <li>
+              <Link className="underline" href="/pet-budget-calculator">Pet Budget Calculator</Link> — monthly and yearly cost planning for dogs and cats.
+            </li>
+            <li>
+              <Link className="underline" href="/spay-neuter-guide">Spay & Neuter Guide</Link> — timing, costs, and recovery care.
+            </li>
+            <li>
+              <Link className="underline" href="/how-much-does-pet-insurance-cost-by-breed">Pet Insurance Cost by Breed</Link> — 2026 breed-level premium comparisons.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

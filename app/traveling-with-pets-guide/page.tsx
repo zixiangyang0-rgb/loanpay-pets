@@ -310,12 +310,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aaha.org/resources/pet-owner/">
             AAHA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/moving-with-pets-guide">moving with pets</Link> ·{" "}
-          <Link href="/microchip-pets-guide">microchip guide</Link> ·{" "}
-          <Link href="/common-pet-emergencies">pet emergencies</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/moving-with-pets-guide">Moving With Pets Guide</Link> — stress-free packing, travel-day, and settling routines.
+            </li>
+            <li>
+              <Link className="underline" href="/microchip-pets-guide">Microchip Pets Guide</Link> — cost, registration, and how recovery works.
+            </li>
+            <li>
+              <Link className="underline" href="/common-pet-emergencies">Common Pet Emergencies</Link> — warning signs and when to rush to the ER.
+            </li>
+            <li>
+              <Link className="underline" href="/separation-anxiety-dogs">Separation Anxiety in Dogs</Link> — alone-time training and calm departure routines.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

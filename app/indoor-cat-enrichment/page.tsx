@@ -308,12 +308,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center">
             Cornell Feline Health Center
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/litter-box-guide">litter box guide</Link> ·{" "}
-          <Link href="/cat-adoption-checklist">cat adoption checklist</Link> ·{" "}
-          <Link href="/cat-nutrition-guide">cat nutrition</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/litter-box-guide">Litter Box Guide</Link> — setup, cleaning cadence, and training fixes.
+            </li>
+            <li>
+              <Link className="underline" href="/cat-adoption-checklist">Cat Adoption Checklist</Link> — supplies, proofing, and the first-week vet plan for new cats.
+            </li>
+            <li>
+              <Link className="underline" href="/cat-nutrition-guide">Cat Nutrition Guide</Link> — food types, portions, and kitten-to-senior transitions.
+            </li>
+            <li>
+              <Link className="underline" href="/senior-cat-care">Senior Cat Care</Link> — diet, comfort, and health checks for aging cats.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

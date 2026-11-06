@@ -307,12 +307,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.avma.org/resources-tools/pet-owners">
             AVMA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/pet-vaccination-schedule">vaccination schedule</Link> ·{" "}
-          <Link href="/common-pet-emergencies">pet emergencies</Link> ·{" "}
-          <Link href="/pet-grooming-basics">pet grooming basics</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/pet-vaccination-schedule">Pet Vaccination Schedule</Link> — core shots and booster timing for puppies and kittens.
+            </li>
+            <li>
+              <Link className="underline" href="/common-pet-emergencies">Common Pet Emergencies</Link> — warning signs and when to rush to the ER.
+            </li>
+            <li>
+              <Link className="underline" href="/pet-grooming-basics">Pet Grooming Basics</Link> — baths, brushing, nails, and ear-care routines.
+            </li>
+            <li>
+              <Link className="underline" href="/vet-costs-guide">Vet Costs Guide</Link> — exam, vaccine, and surgery price ranges plus saving tips.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

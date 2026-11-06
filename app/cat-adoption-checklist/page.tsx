@@ -324,12 +324,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aspca.org/pet-care/cat-care">
             ASPCA cat-care library
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/litter-box-guide">litter box guide</Link> ·{" "}
-          <Link href="/indoor-cat-enrichment">indoor cat enrichment</Link> ·{" "}
-          <Link href="/vet-costs-guide">vet costs guide</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/litter-box-guide">Litter Box Guide</Link> — setup, cleaning cadence, and training fixes.
+            </li>
+            <li>
+              <Link className="underline" href="/indoor-cat-enrichment">Indoor Cat Enrichment</Link> — play, scratching, and climbing ideas for happy cats.
+            </li>
+            <li>
+              <Link className="underline" href="/vet-costs-guide">Vet Costs Guide</Link> — exam, vaccine, and surgery price ranges plus saving tips.
+            </li>
+            <li>
+              <Link className="underline" href="/cat-nutrition-guide">Cat Nutrition Guide</Link> — food types, portions, and kitten-to-senior transitions.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

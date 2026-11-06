@@ -312,12 +312,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aaha.org/resources/pet-owner/">
             AAHA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/dog-adoption-checklist">dog adoption checklist</Link> ·{" "}
-          <Link href="/crate-training-guide">crate training guide</Link> ·{" "}
-          <Link href="/separation-anxiety-dogs">separation anxiety</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/dog-adoption-checklist">Dog Adoption Checklist</Link> — 25 steps for supplies, vet visits, and the first week.
+            </li>
+            <li>
+              <Link className="underline" href="/crate-training-guide">Crate Training Guide</Link> — sizing, schedules, and night-time routines that stick.
+            </li>
+            <li>
+              <Link className="underline" href="/separation-anxiety-dogs">Separation Anxiety in Dogs</Link> — alone-time training and calm departure routines.
+            </li>
+            <li>
+              <Link className="underline" href="/best-dog-breeds-apartments">Best Dog Breeds for Apartments</Link> — 15 calm, quiet picks for small spaces.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

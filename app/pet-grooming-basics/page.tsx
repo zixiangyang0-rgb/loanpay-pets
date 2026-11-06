@@ -302,12 +302,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center">
             Cornell Feline Health Center
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/pet-dental-care-guide">pet dental care</Link> ·{" "}
-          <Link href="/flea-tick-prevention-guide">flea and tick prevention</Link> ·{" "}
-          <Link href="/senior-dog-care">senior dog care</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/pet-dental-care-guide">Pet Dental Care Guide</Link> — brushing, chews, and professional cleaning timing.
+            </li>
+            <li>
+              <Link className="underline" href="/flea-tick-prevention-guide">Flea & Tick Prevention Guide</Link> — year-round prevention options for dogs and cats.
+            </li>
+            <li>
+              <Link className="underline" href="/senior-dog-care">Senior Dog Care</Link> — mobility, diet, and vet cadence for aging dogs.
+            </li>
+            <li>
+              <Link className="underline" href="/puppy-training-basics">Puppy Training Basics</Link> — sit, recall, leash, and house-training foundations.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

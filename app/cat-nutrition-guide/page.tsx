@@ -301,12 +301,26 @@ export default function Page() {
           and{" "}
           <a href="https://catfriendly.com/cat-owner-resources/">
             AAFP cat-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/dog-nutrition-guide">dog nutrition guide</Link> ·{" "}
-          <Link href="/senior-cat-care">senior cat care</Link> ·{" "}
-          <Link href="/pet-dental-care-guide">pet dental care</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/dog-nutrition-guide">Dog Nutrition Guide</Link> — food types, portions, and puppy-to-adult transitions.
+            </li>
+            <li>
+              <Link className="underline" href="/senior-cat-care">Senior Cat Care</Link> — diet, comfort, and health checks for aging cats.
+            </li>
+            <li>
+              <Link className="underline" href="/pet-dental-care-guide">Pet Dental Care Guide</Link> — brushing, chews, and professional cleaning timing.
+            </li>
+            <li>
+              <Link className="underline" href="/foods-toxic-to-pets">Foods Toxic to Pets</Link> — 20 dangerous foods chart every owner should know.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

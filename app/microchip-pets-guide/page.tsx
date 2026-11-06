@@ -299,12 +299,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.avma.org/resources-tools/pet-owners">
             AVMA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/dog-adoption-checklist">dog adoption checklist</Link> ·{" "}
-          <Link href="/traveling-with-pets-guide">traveling with pets</Link> ·{" "}
-          <Link href="/moving-with-pets-guide">moving with pets</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/dog-adoption-checklist">Dog Adoption Checklist</Link> — 25 steps for supplies, vet visits, and the first week.
+            </li>
+            <li>
+              <Link className="underline" href="/traveling-with-pets-guide">Traveling With Pets Guide</Link> — car, air, and hotel checklists for safe trips.
+            </li>
+            <li>
+              <Link className="underline" href="/moving-with-pets-guide">Moving With Pets Guide</Link> — stress-free packing, travel-day, and settling routines.
+            </li>
+            <li>
+              <Link className="underline" href="/common-pet-emergencies">Common Pet Emergencies</Link> — warning signs and when to rush to the ER.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

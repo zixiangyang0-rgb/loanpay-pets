@@ -300,12 +300,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aaha.org/resources/pet-owner/">
             AAHA pet-owner resources
-          </a>
-          . Related on LoanPay Pets: <Link href="/">home hub</Link> ·{" "}
-          <Link href="/vet-costs-guide">vet costs guide</Link> ·{" "}
-          <Link href="/pet-vaccination-schedule">vaccination schedule</Link> ·{" "}
-          <Link href="/microchip-pets-guide">microchip guide</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/vet-costs-guide">Vet Costs Guide</Link> — exam, vaccine, and surgery price ranges plus saving tips.
+            </li>
+            <li>
+              <Link className="underline" href="/pet-vaccination-schedule">Pet Vaccination Schedule</Link> — core shots and booster timing for puppies and kittens.
+            </li>
+            <li>
+              <Link className="underline" href="/microchip-pets-guide">Microchip Pets Guide</Link> — cost, registration, and how recovery works.
+            </li>
+            <li>
+              <Link className="underline" href="/pet-insurance-guide">Pet Insurance Guide</Link> — costs, coverage types, and when to enroll.
+            </li>
+          </ul>
+        </nav>
       </div>
       <script
         type="application/ld+json"

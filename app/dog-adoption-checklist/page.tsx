@@ -332,13 +332,26 @@ export default function Page() {
           and{" "}
           <a href="https://www.aspca.org/pet-care">
             ASPCA pet-care library
-          </a>
-          . Related on LoanPay Pets:{" "}
-          <Link href="/">home hub</Link> ·{" "}
-          <Link href="/puppy-training-basics">puppy training basics</Link> ·{" "}
-          <Link href="/crate-training-guide">crate training guide</Link> ·{" "}
-          <Link href="/vet-costs-guide">vet costs guide</Link>.
+          </a>.
         </p>
+
+        <nav aria-label="Related guides" className="mt-8 rounded-2xl border border-[#f0d9c8] bg-[#fff8f1] p-5">
+          <p className="font-plump text-sm">Keep reading</p>
+          <ul className="mt-3 flex flex-col gap-2 text-sm leading-relaxed text-[#4c423d]">
+            <li>
+              <Link className="underline" href="/puppy-training-basics">Puppy Training Basics</Link> — sit, recall, leash, and house-training foundations.
+            </li>
+            <li>
+              <Link className="underline" href="/crate-training-guide">Crate Training Guide</Link> — sizing, schedules, and night-time routines that stick.
+            </li>
+            <li>
+              <Link className="underline" href="/vet-costs-guide">Vet Costs Guide</Link> — exam, vaccine, and surgery price ranges plus saving tips.
+            </li>
+            <li>
+              <Link className="underline" href="/microchip-pets-guide">Microchip Pets Guide</Link> — cost, registration, and how recovery works.
+            </li>
+          </ul>
+        </nav>
       </div>
       <GuideSchema
         title="Dog Adoption Checklist: 25 Steps for New Owners"
