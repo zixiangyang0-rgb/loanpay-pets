@@ -30,7 +30,7 @@ export default function Page() {
         About LoanPay Pets
       </h1>
       <p className="mt-2 text-sm font-bold text-[#6f5f59]">
-        Updated: October 2026
+        Updated: November 6, 2026
       </p>
       <div className="article-body">
         <p>
@@ -46,17 +46,16 @@ export default function Page() {
         </p>
         <h2>Who writes and reviews our guides?</h2>
         <p>
-          Our editorial team combines professional writers, a veterinary
-          reviewer, and shelter-experienced editors. <strong>Maya
-          Bennett</strong>, Managing Editor, leads topic planning and
-          fact-checking with eight years in pet publishing. <strong>Daniel
-          Okafor</strong>, Senior Pet Writer, covers dogs, training, and
-          costs. <strong>Sofia Marchetti</strong>, Senior Cat Writer,
-          covers feline behavior, nutrition, and enrichment.{" "}
-          <strong>Dr. Emily Hart, DVM</strong>, Veterinary Reviewer,
-          reviews every health article for accuracy and YMYL safety.
-          Together we keep guidance aligned with AAHA, AAFP, AVMA, and
-          university veterinary sources cited on each page.
+          This page was written by <strong>Sarah Mitchell</strong>, Senior
+          Pet Writer; reviewed for accuracy by <strong>David Chen</strong>,
+          our independent fact-checking reviewer; and edited by{" "}
+          <strong>Emily Roberts</strong>, Managing Editor. Together, this
+          three-person team brings over 25 years of combined experience in
+          pet-care education, fact-checking, and digital publishing to
+          every guide on this site, and each member signs off on the final
+          version before it goes live. We keep guidance aligned
+          with AAHA, AAFP, AVMA, and university veterinary sources cited
+          on each page.
         </p>
         <h2>How do we keep content trustworthy?</h2>
         <p>

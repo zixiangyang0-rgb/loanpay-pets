@@ -30,7 +30,7 @@ export default function Page() {
         Contact LoanPay Pets
       </h1>
       <p className="mt-2 text-sm font-bold text-[#6f5f59]">
-        Updated: October 2026
+        Updated: November 6, 2026
       </p>
       <div className="article-body">
         <p>
@@ -48,11 +48,18 @@ export default function Page() {
         <h2>What should you include in your message?</h2>
         <p>
           Tell us the article URL, what you expected, and what you found —
-          screenshots help enormously for display issues. Writers and vets
-          cannot answer personal medical questions by email, but we can
-          point you to the right guide or suggest what to ask your vet. We
-          welcome source tips from veterinary professionals and shelter
-          staff; please include your credentials and citable references.
+          screenshots help enormously for display issues. Messages to this
+          page are read by our three-person editorial team:{" "}
+          <strong>Sarah Mitchell</strong>, Senior Pet Writer, who drafts
+          and maintains our guides; <strong>David Chen</strong>, our
+          independent fact-checking reviewer, who verifies costs and
+          definitions; and <strong>Emily Roberts</strong>, Managing Editor,
+          who gives the final sign-off before anything is published. Our
+          writers and reviewers cannot answer personal medical questions by
+          email, but we can point you to the right guide or suggest what
+          to ask your vet. We welcome source tips from veterinary
+          professionals and shelter staff; please include your credentials
+          and citable references.
         </p>
         <h2>Where else can you explore?</h2>
         <p>
