@@ -28,6 +28,7 @@ const SLUGS = [
   "/best-dog-breeds-apartments",
   "/indoor-cat-enrichment",
   "/pet-budget-calculator",
+  "/first-year-puppy-cost-checklist",
 ];
 
 const LEGAL = ["/about", "/contact", "/privacy-policy", "/terms", "/disclaimer"];
